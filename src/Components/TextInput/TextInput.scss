@@ -1,0 +1,19 @@
+@import "../../styles/_variables.scss";
+
+.text-input-container {
+  background-color: $primary;
+  min-height: 32px;
+  border-radius: $border-radius-medium;
+  padding: 4px 16px;
+  box-shadow: 4px 4px 10px $shadow-light, -4px -4px 10px $shadow-dark;
+  .text-input {
+    background-color: $primary;
+    border: 0px;
+    outline: none;
+    width: 100%;
+    line-height: 32px;
+    &:focus {
+      outline: none;
+    }
+  }
+}

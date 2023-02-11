@@ -1,0 +1,18 @@
+@import "../../styles/_variables.scss";
+.message-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-radius: $border-radius-medium;
+  padding: 8px 16px;
+  border: 2px solid $primary;
+  box-shadow: 4px 4px 10px $shadow-light, -4px -4px 10px $shadow-dark;
+
+  &-user-name {
+    color: #383838;
+    font-weight: $font-weight-semi-bold;
+  }
+  &-user-text {
+    color: rgb(102, 102, 102);
+  }
+}

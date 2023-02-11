@@ -1,0 +1,11 @@
+@import "../../styles/variables.scss";
+.btn {
+  min-height: 2rem;
+  min-width: 4rem;
+  border-radius: $border-radius-medium;
+  border: 4px solid $primary;
+  box-shadow: 4px 4px 10px $shadow-light, -4px -4px 10px $shadow-dark;
+  color: white;
+  background-color: $accent-color;
+  font-weight: $font-weight-bold;
+}

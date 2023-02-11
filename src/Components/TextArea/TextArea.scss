@@ -1,0 +1,19 @@
+@import "../../styles/_variables.scss";
+
+.text-area-container {
+  height: 90px;
+  border: none;
+  border-radius: $border-radius-medium;
+  box-shadow: 4px 4px 10px $shadow-light, -4px -4px 10px $shadow-dark;
+  padding: 10px;
+  .text-area {
+    resize: none;
+    height: 100%;
+    width: 100%;
+    background-color: $primary;
+    border: none;
+    &:focus {
+      outline: none;
+    }
+  }
+}
