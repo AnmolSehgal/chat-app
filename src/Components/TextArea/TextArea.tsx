@@ -3,7 +3,7 @@ import "./TextArea.scss";
 
 export interface TextAreaProps
   extends TextareaHTMLAttributes<HTMLTextAreaElement> {
-  placeholder: string;
+  placeholder?: string;
 }
 
 const TextArea = (props: TextAreaProps) => {

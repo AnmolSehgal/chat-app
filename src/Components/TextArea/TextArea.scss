@@ -1,7 +1,8 @@
 @import "../../styles/_variables.scss";
 
 .text-area-container {
-  height: 90px;
+  height: 60px;
+  width: 100%;
   border: none;
   border-radius: $border-radius-medium;
   box-shadow: 4px 4px 10px $shadow-light, -4px -4px 10px $shadow-dark;

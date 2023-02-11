@@ -4,6 +4,7 @@
   background-color: $primary;
   min-height: 32px;
   border-radius: $border-radius-medium;
+  width: 100%;
   padding: 4px 16px;
   box-shadow: 4px 4px 10px $shadow-light, -4px -4px 10px $shadow-dark;
   .text-input {
@@ -13,7 +14,7 @@
     width: 100%;
     line-height: 32px;
     &:focus {
-      outline: none;
+      outline: nones;
     }
   }
 }
