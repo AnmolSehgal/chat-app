@@ -1,0 +1,19 @@
+.message-list-container {
+  padding: 16px;
+  display: flex;
+  height: 80%;
+
+  overflow-y: auto;
+  flex-direction: column;
+  gap: 12px;
+  .sent-chat-message {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+  }
+  .received-chat-message {
+    width: auto;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}

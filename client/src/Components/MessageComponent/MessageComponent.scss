@@ -5,6 +5,8 @@
   gap: 8px;
   border-radius: $border-radius-medium;
   padding: 8px 16px;
+  max-width: 70%;
+  width: fit-content;
   border: 2px solid $primary;
   box-shadow: 4px 4px 10px $shadow-light, -4px -4px 10px $shadow-dark;
 
