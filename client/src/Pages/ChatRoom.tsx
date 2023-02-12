@@ -65,6 +65,7 @@ const ChatroomPage = () => {
                       date: new Date(),
                     })
                   );
+                  setText("");
                 }}
               >
                 {"Send"}
