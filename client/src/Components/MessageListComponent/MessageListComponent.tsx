@@ -3,13 +3,13 @@ import MessageComponent, {
 } from "../MessageComponent/MessageComponent";
 import "./MessageListComponent.scss";
 export type MessageListComponentProps = {
-  messages: MessageComponentProps[];
+  messages: (MessageComponentProps & { date: Date })[];
 };
 
 const MessageListComponent = ({ messages }: MessageListComponentProps) => {
   return (
     <div className="message-list-container">
-      {messages?.map((message) => {
+      {messages.map((message) => {
         return (
           <div
             className={

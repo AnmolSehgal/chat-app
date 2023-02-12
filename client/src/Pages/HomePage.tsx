@@ -1,10 +1,16 @@
 import { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import Button from "../Components/Button/Button";
 import TextInput from "../Components/TextInput/TextInput";
+import { addUserToChatroomSuccess } from "../store/action";
+import { globalState } from "../store/types";
+
 import "./style.scss";
 
 const HomePage = () => {
   const [userName, setUserName] = useState("");
+  const dispatch = useDispatch();
+
   return (
     <div className="container">
       <div className="home-container">
@@ -21,7 +27,13 @@ const HomePage = () => {
           <Button
             name="enter"
             onClick={() => {
-              console.log(userName);
+              if (userName && userName.length > 0)
+                dispatch(
+                  addUserToChatroomSuccess({
+                    userName,
+                    userID: crypto.randomUUID(),
+                  })
+                );
             }}
           >
             Enter
